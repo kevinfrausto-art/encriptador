@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="/img/Logo.png" alt="logo de alura" class="logo">
+    </header>
+    <main class="main">
+        <section>
+            <textarea  class="textarea" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+            <div class="letras-mayusculas">
+              
+                <h6 class="informacion"> <img src="/img/Vector.png" alt="exclamacion" class="exclamacion">Solo letras minusculas</h6>
+               
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()" >encriptar
+                </button>
+                <button class="btn-desencriptar" onclick="BtnDesEncriptar()">desencriptar</button>
+            </div>
+          
+        </section>
+
+        <section class="mensajes">
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <div>
+                    <button class="copiar" onclick="btnCopiar()">copiar</button>
+             </div>
+        </section>
+    </main>
+    <footer class="pie" >
+        <a href="https://www.linkedin.com/in/kevin-frausto-gonzalez-6b8220242/" target="_blank"> Encriptador hecho por Kevin Frausto Gonzalez </a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
